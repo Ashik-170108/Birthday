@@ -1,0 +1,80 @@
+body{
+margin:0;
+padding:0;
+text-align:center;
+font-family:Arial;
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+overflow:hidden;
+}
+
+.title{
+font-size:50px;
+color:white;
+margin-top:40px;
+}
+
+#typing{
+font-size:60px;
+color:#ff0066;
+text-shadow:0 0 10px white,0 0 20px pink;
+}
+
+.message{
+width:60%;
+margin:auto;
+font-size:20px;
+color:#333;
+}
+
+.slideshow{
+margin-top:30px;
+}
+
+.slide{
+width:320px;
+border-radius:15px;
+display:none;
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.slide.active{
+display:block;
+margin:auto;
+}
+
+button{
+margin-top:30px;
+padding:12px 25px;
+font-size:18px;
+border:none;
+background:#ff0066;
+color:white;
+border-radius:10px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff3385;
+}
+
+/* floating hearts */
+
+.hearts span{
+position:absolute;
+font-size:25px;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);opacity:1;}
+100%{transform:translateY(-10vh);opacity:0;}
+}
+
+#confetti{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+}
